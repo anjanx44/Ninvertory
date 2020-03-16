@@ -7,7 +7,7 @@ import javax.persistence.Id;
 public class Users {
 	@Id
 	private long id;
-	private String name;
+	private String email;
 	private String password;
 	public Users() {
 	super();
@@ -16,7 +16,7 @@ public class Users {
 	public Users(long id, String name, String password) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.email = name;
 		this.password = password;
 	}
 	public long getId() {
@@ -26,10 +26,10 @@ public class Users {
 		this.id = id;
 	}
 	public String getName() {
-		return name;
+		return email;
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.email = name;
 	}
 	public String getPassword() {
 		return password;
