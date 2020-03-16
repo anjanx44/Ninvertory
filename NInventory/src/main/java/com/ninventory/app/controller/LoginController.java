@@ -18,7 +18,7 @@ public class LoginController {
 	  
 	  @PostMapping(value ="/login")
 	  public void Login( Users user ) {
-		System.out.println(user.getName());  
+		System.out.println(user.getEmail());  
 		  
 		  
 	  }
